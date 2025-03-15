@@ -1,0 +1,157 @@
+@use "style/nav";
+@use "style/banner";
+
+$white: #f1f1f1;
+
+.contennedor {
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.contennedor:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+div h2 {
+    color: #007bff;
+    /* Bright Blue */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table th,
+table td {
+    border: 1px solid $white;
+    padding: 12px;
+    text-align: left;
+}
+table th {
+    background-color: $white;
+    font-weight: 600;
+    color: #333;
+}
+table tr:nth-child(even) {
+    background-color: $white;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 12px 0;
+    font-size: 1.2rem;
+}
+ul li strong {
+    color: #007bff;
+}
+ul.imagenes- li {
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+#botanica{
+    max-width: 500px;
+}
+
+.ojosloco{
+    max-width: 900px;
+}
+#inicio{
+    text-align: center;
+    
+
+}
+
+.Paraf{
+    padding: 0 4%;
+    text-align: center;
+    margin: 0 0 60px;
+}
+
+#lista{
+    text-align: center;
+
+}
+.list{
+    background-color: none;
+    cursor: pointer;
+}
+.list:hover{
+    background-color: #007aab;
+    color: #ffffff;
+}
+
+
+
+.imagenes-{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.imagenes- li{
+    width: 40%;
+    margin: 20px;
+    display: block;
+
+}
+.imagenes- li img{
+    width: 100%;
+    display: block;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+@media (max-width: 768px){
+    .imagenes- li{
+        width: 100%;
+    }
+    .imagenes-{
+    flex-direction: column;
+    }
+}
+
+$primary-color:#06a8e7;
+
+.animated-button {
+    background-color: #4cb7db; /* Azul claro */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    display: block;
+    font-size: 16px;
+    margin: 4px auto 30px;
+    cursor: pointer;
+    animation: move 2s infinite alternate, colorChange 2s infinite alternate;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+
+@keyframes colorChange {
+    0% { background-color: #23abd8; } /* Azul claro */
+    100% { background-color: #00008b; } /* Azul oscuro */
+}
